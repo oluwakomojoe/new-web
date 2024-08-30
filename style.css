@@ -1,0 +1,94 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the header */
+.header {
+    display: flex;
+    position: absolute;
+}
+
+.logo {
+    width: 200px;
+    margin: 0px;
+}
+
+.button {
+    padding: 10px 20px;
+    margin: 40px;
+    margin-right: 5px;
+    border: none;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-color: #e50914;
+    color: white; 
+    
+}
+
+#deco{
+    text-decoration: none;
+    color: white;
+}
+
+.button:hover{
+    background-color: red;
+    color: white;
+}
+
+/* Style the main content */
+.main-content {
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('net2.jpeg');
+    text-align: center;
+    padding: 150px 50px;
+}
+
+.featured h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.featured p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.join-btn {
+    padding: 15px 30px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.join-btn:hover {
+    background-color:red;
+    color: white;
+}
+/* Style the footer */
+.foot {
+    padding: 5px 10px;
+    background-color: #141414;
+    color: white;
+    text-align: center;
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 100%) {
+    .header, .main-content, .footer {
+        padding: 10px;
+    }
+
+    .featured h1 {
+        font-size: 2rem;
+    }
+
+    .featured p {
+        font-size: 1rem;
+    }
+}
